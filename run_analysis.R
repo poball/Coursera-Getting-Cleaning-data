@@ -46,7 +46,7 @@ names(S)<-"subject"
 #merge data by col
 clean_data<-cbind(S,Y,X)
 #unload data to file 
-write.table(clean_data,"./merged_clean_data.txt")
+write.table(clean_data,"./data/merged_clean_data.txt")
 
 #5 From the data set in step 4, creates a second, independent tidy data set 
 #with the average of each variable for each activity and each subject.
@@ -71,5 +71,5 @@ for (i in 1:num_sub){
 }
 
 #unload data
-write.table(result,"./data_with_means.txt",row.names=FALSE)
+write.table(result,"./data/data_with_means.txt",row.names=FALSE)
 
