@@ -23,10 +23,10 @@ Description R script (run_analysis.R)
 * The script also appropriately labels the data set with descriptive names: 
   1. Apply header("subject") to data Y.
   2. Merge all 3 datasets(X, Y, S) by columns, result a 10299*68 data frame.
-  3. Save result as merged_clean_data.txt in "./data" directory.
+  3. Save result as merged_clean_data.txt in current work directory.
 
 * Creates a 2nd, independent tidy data set with the average of each measurement for each activity and each subject. 
-  1. Result saved as data_with_means.txt, a 180*68 data frame 
+  1. Result saved as data_with_means.txt a current work directory, a 180*68 data frame 
   2. Description of "data_with_means.txt" 
       1. column 1: subject IDs, 
       2. column 2: activity names
